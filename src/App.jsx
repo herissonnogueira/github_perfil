@@ -10,7 +10,23 @@ function App() {
 
   return (
     <>
-      <input type="text" onBlur={(e) => setNomeUsuario(e.target.value)} />
+      <div className='container'>
+        <form className='form'>
+          <input
+            onBlur={e => setFormularioEstaVisivel(e.target.value)}
+            className='formInput'
+            type="text"
+            placeholder='Digite seu GitHub'
+          />
+          <button
+            onClick={() => setNomeUsuario(formularioEstaVisivel)}
+            className='formButton'
+            type="button"
+          >
+            Pesquisar
+          </button>
+        </form>
+      </div>
 
       {nomeUsuario.length > 4 && (
         <>

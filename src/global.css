@@ -11,6 +11,27 @@
     margin: 0 auto;
 }
 
+.form {
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+}
+
+.formInput {
+    border-radius: 5px;
+}
+
+.formButton {
+    color: var(--corSecundaria);
+    background-color: var(--corPrincipal);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 4px 8px;
+    margin-left: 5px;
+}
+
+
 :root {
     --corPrincipal: #2e86de;
     --corSecundaria: #fff;
